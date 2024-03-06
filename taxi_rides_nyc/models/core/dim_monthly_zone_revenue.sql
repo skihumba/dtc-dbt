@@ -27,3 +27,4 @@ with trips_data as (
 
     from trips_data
     group by 1,2,3
+--dbt build --select +dim_monthly_zone_revenue+ --vars '{'is_test_run':'false'}'
